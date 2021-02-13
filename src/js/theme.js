@@ -22,7 +22,7 @@ function currentTheme() {
   const sevedTheme = localStorage.getItem('theme');
 
   if (sevedTheme === Theme.DARK) {
-    document.body.classList.add('dark-theme');
+    document.body.classList.add(Theme.DARK);
     checkboxRef.checked = true;
   } else {
     checkboxRef.checked = false;
